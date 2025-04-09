@@ -1,0 +1,73 @@
+.info-page {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+    color: $color4;
+    background-color: $color1;
+  
+    .info-section {
+      margin-bottom: 40px;
+  
+      h2 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+        color: $color4;
+      }
+  
+      p, li {
+        font-size: 1rem;
+        color: $color5;
+        line-height: 1.6;
+      }
+  
+      ul, ol {
+        margin: 0;
+        padding-left: 1.5rem;
+        list-style-position: outside;
+  
+        li {
+          padding-left: 0.5rem;
+          text-indent: -0.5rem;
+          margin-bottom: 8px;
+          line-height: 1.6;
+        }
+      }
+  
+      .faq p {
+        margin-bottom: 20px;
+      }
+    }
+  
+    .contact-block {
+        padding: 30px;
+        border-radius: 10px;
+        background: $color1;
+      
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      
+        ul {
+          line-height: 1.8;
+          font-size: 0.95rem;
+        }
+      
+        .cta-button {
+          align-self: flex-end;
+          margin-top: 10px;
+          margin-bottom: -5px;
+          background-color: $color4;
+          color: $color10;
+          padding: 10px 20px;
+          font-weight: bold;
+          text-decoration: none;
+          border-radius: 6px;
+          transition: 0.3s ease;
+      
+          &:hover {
+            background-color: $color6;
+          }
+        }
+      }
+    }
