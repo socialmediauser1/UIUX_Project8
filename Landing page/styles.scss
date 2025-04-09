@@ -451,6 +451,11 @@ footer {
   transition: opacity 0.3s ease;
 }
 
+a {
+  text-decoration: none;
+  color: $color9;
+}
+
 @media (max-width: 768px) {
   .container,
   .collections-content,
