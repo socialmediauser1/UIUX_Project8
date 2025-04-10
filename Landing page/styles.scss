@@ -101,6 +101,7 @@ body {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .signup {
@@ -108,9 +109,19 @@ body {
   color: $color10;
 }
 
+.signup:hover {
+  background-color: $color4;
+  transform: scale(1.05);
+}
+
 .login {
   background-color: $color3;
   color: $color9;
+}
+
+.login:hover {
+  background-color: $color6;
+  transform: scale(1.05);
 }
 
 .hero {
@@ -126,11 +137,17 @@ body {
   align-items: center;
   padding: 0 80px;
   color: $color10;
+  transition: transform 0.3s ease;
+}
+
+.hero:hover {
+  transform: scale(1.02);
 }
 
 .hero-content {
   max-width: 600px;
   padding-left: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .hero h1 {
@@ -454,6 +471,17 @@ footer {
 a {
   text-decoration: none;
   color: $color9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
